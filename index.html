@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Welcome to the Library Management System</h1>
+
+    <div class="mt-4">
+        <h2>Available Actions:</h2>
+        <div class="d-flex flex-wrap gap-3 mt-3">
+            <!-- Books Section -->
+            <a href="{{ url_for('books') }}" class="btn btn-primary">
+                View Books
+            </a>
+
+            <!-- Members Section -->
+            <a href="{{ url_for('members') }}" class="btn btn-primary">
+                View Members
+            </a>
+
+            <!-- Transactions Section -->
+            <a href="{{ url_for('transactions') }}" class="btn btn-primary">
+                View Transactions
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
